@@ -12,6 +12,8 @@ Các Ninja thế hệ sau cần phải tiếp bước Ninja truyền kỳ, bư�
 
 Game có hệ thống quái vật khá đa dạng, phong phú; đồ họa hoàn chỉnh; độ khó ở mức trung bình. Để tiêu diệt hết quái vật thì cần sự nhanh tay trong điều khiển, khôn khéo trong cách di chuyển. Quái vật trong game “khôn” hơn, “biết nghĩ” hơn, buộc người chơi cần suy nghĩ cách tiêu diệt chúng đồng thời không để rơi xuống vực.
 
+Video demo: https://www.youtube.com/watch?v=0i_lEpnLAo0
+
 Một số hình ảnh mô tả game:
 
 (Hình 1.1. Menu game)
