@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/HappyJungle.ogg-9b7b8285998748eaf4a528cd721f6ca4.oggstr"
+
+[deps]
+
+source_file="res://DoHoa/Music/HappyJungle.ogg"
+dest_files=[ "res://.import/HappyJungle.ogg-9b7b8285998748eaf4a528cd721f6ca4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

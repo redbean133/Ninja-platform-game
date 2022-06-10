@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Magic_Attack7.png" type="Texture" id=7]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Magic_Attack6.png" type="Texture" id=9]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Magic_Attack5.png" type="Texture" id=10]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Magic_Attack8.png" type="Texture" id=12]
+[ext_resource path="res://Tep/ThanDen/PHONG_BA.gd" type="Script" id=14]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 12.1333
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "ban",
+"speed": 7.0
+} ]
+
+[node name="PHONG_BA" type="Area2D"]
+position = Vector2( -6.10523, 9.03715 )
+scale = Vector2( 1.5, 1.5 )
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.84618, -6.11892 )
+shape = SubResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 3.84618, -6.46857 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 7.9056, -10.8922 )
+scale = Vector2( 0.4, 0.4 )
+frames = SubResource( 3 )
+animation = "ban"
+playing = true
+[connection signal="body_entered" from="." to="." method="_on_PHONG_BA_body_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

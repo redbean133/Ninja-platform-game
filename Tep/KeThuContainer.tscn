@@ -1,0 +1,105 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Tep/KeThu_NhenMotSung.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Tep/BongMaBay/BongMa.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Tep/Rong/Rong.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Tep/ThanDen/ThanDen.tscn" type="PackedScene" id=8]
+
+
+
+[node name="KeThu" type="Node2D"]
+position = Vector2( 1.18425, 4.73701 )
+
+[node name="KeThu_NhenMotSung" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1245.7, 423.028 )
+mau = 4
+
+[node name="KeThu_NhenMotSung2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 769.175, 361.783 )
+
+[node name="KeThu_BongMa" parent="." instance=ExtResource( 6 )]
+position = Vector2( 718.291, 158.057 )
+
+[node name="KeThu_ThanDen" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2986.72, 158.723 )
+mau = 4
+
+[node name="KeThu_Rong" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1650.27, 167.783 )
+tocDo = 50
+mau = 5
+
+[node name="KeThu_NhenMotSung3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 141.015, 171.489 )
+
+[node name="KeThu_NhenMotSung4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1154.48, 106.888 )
+mau = 4
+
+[node name="KeThu_NhenMotSung5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2752.04, 490.323 )
+tocDo = 75
+mau = 4
+
+[node name="KeThu_BongMa2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2341.82, 426.823 )
+mau = 4
+
+[node name="KeThu_Rong2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3886, 354.309 )
+scale = Vector2( 1.2, 1.2 )
+
+[node name="KeThu_BongMa3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4776.54, 357.485 )
+
+[node name="KeThu_NhenMotSung6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4519.76, 488.466 )
+tocDo = 75
+mau = 4
+
+[node name="KeThu_NhenMotSung7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4307.5, 94.5257 )
+scale = Vector2( 1.5, 1.5 )
+tocDo = 75
+tocDoTanCong = 200
+mau = 5
+
+[node name="KeThu_ThanDen2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 5723.23, 288.448 )
+tocDo = 100
+mau = 5
+
+[node name="KeThu_NhenMotSung8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3768.38, 42.7936 )
+tocDo = 75
+tocDoTanCong = 200
+mau = 5
+
+[node name="KeThu_NhenMotSung9" parent="." instance=ExtResource( 5 )]
+position = Vector2( 10712.6, 266.807 )
+tocDo = 100
+tocDoTanCong = 200
+mau = 5
+
+[node name="KeThu_Rong3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 10465.1, 380.161 )
+scale = Vector2( 1.5, 1.5 )
+tocDo = 150
+
+[node name="KeThu_ThanDen3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 10491.8, 114.208 )
+scale = Vector2( 1.5, 1.5 )
+tocDo = 100
+mau = 5
+
+[node name="KeThu_BongMa5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 11215.7, 113.007 )
+scale = Vector2( 2, 2 )
+tocDo = 100
+mau = 5
+
+[node name="KeThu_NhenMotSung10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 10185.8, 261.983 )
+tocDo = 100
+tocDoTanCong = 200
+mau = 5

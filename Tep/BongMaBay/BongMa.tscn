@@ -1,0 +1,108 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Tep/BongMaBay/BongMa.gd" type="Script" id=1]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_00.png" type="Texture" id=2]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_01.png" type="Texture" id=4]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_03.png" type="Texture" id=5]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_04.png" type="Texture" id=6]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_02.png" type="Texture" id=7]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_05.png" type="Texture" id=8]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_07.png" type="Texture" id=9]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_06.png" type="Texture" id=10]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_09.png" type="Texture" id=11]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_08.png" type="Texture" id=12]
+[ext_resource path="res://Tep/BongMaBay/QuaiVatNhoBietBay/skeleton-fly_10.png" type="Texture" id=13]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/VIDA_10.png" type="Texture" id=14]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/VIDA_0.png" type="Texture" id=15]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "bay",
+"speed": 30.0
+}, {
+"frames": [  ],
+"loop": false,
+"name": "chet",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 53.8981
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 31.4719
+height = 151.832
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 186.422
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 17.9771
+
+[node name="KeThu_BongMa" type="KinematicBody2D"]
+position = Vector2( 425.491, 148.34 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 2.49341, -5.10315 )
+scale = Vector2( 0.124433, 0.119756 )
+frames = SubResource( 1 )
+animation = "bay"
+speed_scale = 0.5
+
+[node name="Position2D" type="Position2D" parent="AnimatedSprite"]
+position = Vector2( 85.6714, 190.244 )
+
+[node name="Position2D2" type="Position2D" parent="AnimatedSprite"]
+position = Vector2( -138.708, 181.516 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.27197, -1.95375 )
+scale = Vector2( -0.376545, 0.358125 )
+shape = SubResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 21.3591, 25.5199 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -19.9037, 56.1 )
+shape = SubResource( 3 )
+
+[node name="tam_nhin" type="Area2D" parent="."]
+position = Vector2( -8.32172, -23.8556 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tam_nhin"]
+position = Vector2( 7.60291, 22.6873 )
+shape = SubResource( 4 )
+
+[node name="Hp_bongma" type="TextureProgress" parent="."]
+margin_left = -22.7917
+margin_top = -34.8505
+margin_right = 355.209
+margin_bottom = 5.14954
+rect_scale = Vector2( 0.12, 0.12 )
+max_value = 5.0
+value = 5.0
+texture_under = ExtResource( 15 )
+texture_progress = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ThanThe" type="Area2D" parent="."]
+position = Vector2( 162.551, 2.7739 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ThanThe"]
+position = Vector2( -164.335, -4.41602 )
+shape = SubResource( 5 )
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="tam_nhin" to="." method="_on_tam_nhin_body_entered"]
+[connection signal="body_exited" from="tam_nhin" to="." method="_on_tam_nhin_body_exited"]
+[connection signal="body_entered" from="ThanThe" to="." method="_on_ThanThe_body_entered"]

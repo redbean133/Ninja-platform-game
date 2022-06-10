@@ -1,0 +1,1430 @@
+[gd_scene load_steps=173 format=2]
+
+[ext_resource path="res://Tep/new_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Background/1.jpg" type="Texture" id=2]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_000.png" type="Texture" id=3]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_001.png" type="Texture" id=4]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_003.png" type="Texture" id=5]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_007.png" type="Texture" id=6]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_002.png" type="Texture" id=7]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_008.png" type="Texture" id=8]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_009.png" type="Texture" id=9]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_010.png" type="Texture" id=10]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_004.png" type="Texture" id=11]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_005.png" type="Texture" id=12]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_006.png" type="Texture" id=13]
+[ext_resource path="res://DoHoa/Character/Swordsman/BiThuong/Hurt_011.png" type="Texture" id=14]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_007.png" type="Texture" id=15]
+[ext_resource path="res://Tep/Gai.tscn" type="PackedScene" id=16]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_001.png" type="Texture" id=17]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_002.png" type="Texture" id=18]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_007.png" type="Texture" id=19]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_005.png" type="Texture" id=20]
+[ext_resource path="res://DoHoa/MotSoThuKhac/luck.png" type="Texture" id=21]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_008.png" type="Texture" id=22]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_006.png" type="Texture" id=23]
+[ext_resource path="res://DoHoa/Music/NhatLa.wav" type="AudioStream" id=24]
+[ext_resource path="res://DoHoa/MotSoThuKhac/a.png" type="Texture" id=25]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_003.png" type="Texture" id=26]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_003.png" type="Texture" id=27]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_001.png" type="Texture" id=28]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_006.png" type="Texture" id=29]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_009.png" type="Texture" id=30]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_005.png" type="Texture" id=31]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_010.png" type="Texture" id=32]
+[ext_resource path="res://DoHoa/MotSoThuKhac/b.png" type="Texture" id=33]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_004.png" type="Texture" id=34]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_004.png" type="Texture" id=35]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_010.png" type="Texture" id=36]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_000.png" type="Texture" id=37]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_009.png" type="Texture" id=38]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_000.png" type="Texture" id=39]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_008.png" type="Texture" id=40]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_011.png" type="Texture" id=41]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_012.png" type="Texture" id=42]
+[ext_resource path="res://Tep/LaCay.gd" type="Script" id=43]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhanRoi/Idle_011.png" type="Texture" id=44]
+[ext_resource path="res://DoHoa/font/UTM Nokia.ttf" type="DynamicFontData" id=45]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chay/Run_002.png" type="Texture" id=46]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_016.png" type="Texture" id=47]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_005.png" type="Texture" id=48]
+[ext_resource path="res://DoHoa/MotSoThuKhac/Daco_4347860.png" type="Texture" id=49]
+[ext_resource path="res://Tep/MyGame.gd" type="Script" id=50]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_000.png" type="Texture" id=51]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_004.png" type="Texture" id=52]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_002.png" type="Texture" id=53]
+[ext_resource path="res://Tep/Rong/Rong.tscn" type="PackedScene" id=54]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_003.png" type="Texture" id=55]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_019.png" type="Texture" id=56]
+[ext_resource path="res://DoHoa/MotSoThuKhac/table2.png" type="Texture" id=57]
+[ext_resource path="res://DoHoa/font/UTM Bustamalaka.ttf" type="DynamicFontData" id=58]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_001.png" type="Texture" id=59]
+[ext_resource path="res://DoHoa/MotSoThuKhac/header (3).png" type="Texture" id=60]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_008.png" type="Texture" id=61]
+[ext_resource path="res://DoHoa/MotSoThuKhac/next.png" type="Texture" id=62]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_007.png" type="Texture" id=63]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_012.png" type="Texture" id=64]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_014.png" type="Texture" id=65]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLen/Jump On Air_000.png" type="Texture" id=66]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_018.png" type="Texture" id=67]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_010.png" type="Texture" id=68]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_013.png" type="Texture" id=69]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_015.png" type="Texture" id=70]
+[ext_resource path="res://DoHoa/MotSoThuKhac/next1.png" type="Texture" id=71]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_006.png" type="Texture" id=72]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_011.png" type="Texture" id=73]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_017.png" type="Texture" id=74]
+[ext_resource path="res://DoHoa/Character/Swordsman/Chet/Death_009.png" type="Texture" id=75]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_002.png" type="Texture" id=76]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_009.png" type="Texture" id=77]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_004.png" type="Texture" id=78]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_011.png" type="Texture" id=79]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_001.png" type="Texture" id=80]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_012.png" type="Texture" id=81]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_014.png" type="Texture" id=82]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_000.png" type="Texture" id=83]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_013.png" type="Texture" id=84]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_015.png" type="Texture" id=85]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_006.png" type="Texture" id=86]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_007.png" type="Texture" id=87]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_005.png" type="Texture" id=88]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_003.png" type="Texture" id=89]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_010.png" type="Texture" id=90]
+[ext_resource path="res://DoHoa/Character/Swordsman/NhayLenTanCong/Jump Ground Attack_008.png" type="Texture" id=91]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/health_bar-04.png" type="Texture" id=92]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/health_bar-05.png" type="Texture" id=93]
+[ext_resource path="res://Tep/HP.gd" type="Script" id=94]
+[ext_resource path="res://Tep/Mana.gd" type="Script" id=95]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/health_bar-02.png" type="Texture" id=96]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/label_HP_bg.png" type="Texture" id=97]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/label_EP.png" type="Texture" id=98]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/label_HP.png" type="Texture" id=99]
+[ext_resource path="res://DoHoa/font/Comfortaa-Bold.ttf" type="DynamicFontData" id=100]
+[ext_resource path="res://DoHoa/Music/HappyJungle.ogg" type="AudioStream" id=101]
+[ext_resource path="res://DoHoa/MotSoThuKhac/hookTarget03_wings.png" type="Texture" id=102]
+[ext_resource path="res://DoHoa/MotSoThuKhac/smoke1.png" type="Texture" id=103]
+[ext_resource path="res://Tep/SamSet.tscn" type="PackedScene" id=104]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/ArrowSign.png" type="Texture" id=105]
+[ext_resource path="res://Tep/PauseGame.gd" type="Script" id=106]
+[ext_resource path="res://DoHoa/Music/NhacNen_mygame.ogg" type="AudioStream" id=107]
+[ext_resource path="res://Tep/BongMaBay/BongMa.tscn" type="PackedScene" id=108]
+[ext_resource path="res://Tep/KeThu_NhenMotSung.tscn" type="PackedScene" id=109]
+[ext_resource path="res://DoHoa/Music/jump.wav" type="AudioStream" id=110]
+[ext_resource path="res://Tep/ThanDen/ThanDen.tscn" type="PackedScene" id=111]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Crate.png" type="Texture" id=112]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Background/stretched-1920-1080-887559.jpg" type="Texture" id=113]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Sign.png" type="Texture" id=114]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/TombStone (1).png" type="Texture" id=115]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Tree.png" type="Texture" id=116]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/TombStone (2).png" type="Texture" id=117]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Skeleton.png" type="Texture" id=118]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Bush (1).png" type="Texture" id=119]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Bush (2).png" type="Texture" id=120]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/DeadBush.png" type="Texture" id=121]
+[ext_resource path="res://DoHoa/MotSoThuKhac/Light/5ed287d8bfe25.png" type="Texture" id=122]
+[ext_resource path="res://DoHoa/MotSoThuKhac/Light/hiclipart.com.png" type="Texture" id=123]
+[ext_resource path="res://DoHoa/MotSoThuKhac/Light/5ed28be154ced.png" type="Texture" id=124]
+[ext_resource path="res://DoHoa/MotSoThuKhac/Light/toppng.com-light-png-images-blue-light-beam-392x400.png" type="Texture" id=125]
+[ext_resource path="res://Tep/LuaDiaNguc.tscn" type="PackedScene" id=126]
+[ext_resource path="res://Tep/GaiAn.tscn" type="PackedScene" id=127]
+[ext_resource path="res://Tep/VongXoayHacAm.tscn" type="PackedScene" id=128]
+[ext_resource path="res://Tep/Boss.tscn" type="PackedScene" id=129]
+[ext_resource path="res://DoHoa/MotSoThuKhac/next3.png" type="Texture" id=130]
+[ext_resource path="res://DoHoa/MotSoThuKhac/restart.png" type="Texture" id=131]
+[ext_resource path="res://DoHoa/MotSoThuKhac/play1.png" type="Texture" id=132]
+[ext_resource path="res://DoHoa/Music/playerhurt.wav" type="AudioStream" id=133]
+[ext_resource path="res://DoHoa/MotSoThuKhac/pause.png" type="Texture" id=134]
+[ext_resource path="res://DoHoa/MotSoThuKhac/restart1.png" type="Texture" id=135]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Tileset/DauTrenKhong.png" type="Texture" id=185]
+[ext_resource path="res://new_tileset.tres" type="TileSet" id=196]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Tileset/GiuaTrenKhong.png" type="Texture" id=197]
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Tileset/CuoiTrenKhong.png" type="Texture" id=198]
+[ext_resource path="res://Tep/ChuyenDong.tres" type="Animation" id=199]
+[ext_resource path="res://Tep/ChuyenDong2.tres" type="Animation" id=204]
+[ext_resource path="res://Tep/Player.gd" type="Script" id=217]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+[sub_resource type="Animation" id=2]
+resource_name = "circlemagic"
+length = 5.0
+loop = true
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("MagicCircleRed:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10, 590.195 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 51 ), ExtResource( 59 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 72 ), ExtResource( 63 ), ExtResource( 47 ), ExtResource( 61 ), ExtResource( 75 ), ExtResource( 68 ), ExtResource( 73 ), ExtResource( 64 ), ExtResource( 69 ), ExtResource( 65 ), ExtResource( 70 ), ExtResource( 74 ), ExtResource( 67 ), ExtResource( 56 ) ],
+"loop": true,
+"name": "Chet",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 28 ), ExtResource( 46 ), ExtResource( 27 ), ExtResource( 34 ), ExtResource( 20 ), ExtResource( 29 ), ExtResource( 15 ), ExtResource( 40 ), ExtResource( 30 ), ExtResource( 32 ), ExtResource( 41 ), ExtResource( 42 ) ],
+"loop": true,
+"name": "Chay",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "BiThuong",
+"speed": 30.0
+}, {
+"frames": [ null ],
+"loop": true,
+"name": "BienMat",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 26 ), ExtResource( 35 ), ExtResource( 31 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 38 ), ExtResource( 36 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "NhanRoi",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 66 ) ],
+"loop": true,
+"name": "NhayLen",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 56 ) ],
+"loop": true,
+"name": "NamChet",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 13.2149
+height = 22.1732
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 83 ), ExtResource( 80 ), ExtResource( 76 ), ExtResource( 89 ), ExtResource( 78 ), ExtResource( 88 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 91 ), ExtResource( 77 ), ExtResource( 90 ), ExtResource( 79 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 85 ) ],
+"loop": true,
+"name": "TanCong",
+"speed": 30.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "BienMat",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=7]
+radius = 11.7144
+height = 30.0788
+
+[sub_resource type="CapsuleShape2D" id=8]
+radius = 13.3604
+height = 26.7866
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 91.8794, 9.1637 )
+
+[sub_resource type="Curve2D" id=10]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1694.13, 631.106, 0, 0, 0, 0, 2518.1, 630.79 )
+}
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 90.4683, 9.83679 )
+
+[sub_resource type="Curve2D" id=12]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 4646.99, 607.2, 0, 0, 0, 0, 5151.92, 603.378 )
+}
+
+[sub_resource type="DynamicFont" id=13]
+size = 26
+use_filter = true
+font_data = ExtResource( 100 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 28
+use_filter = true
+font_data = ExtResource( 100 )
+
+[sub_resource type="Animation" id=15]
+resource_name = "fade"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 0.027451, 0.0235294, 0.0235294, 1 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+length = 1.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 180.0, 360.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6, 1.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.4, 0.4 ), Vector2( 0.2, 0.2 ), Vector2( 0.4, 0.4 ) ]
+}
+
+[sub_resource type="DynamicFont" id=17]
+size = 15
+font_data = ExtResource( 45 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 15
+font_data = ExtResource( 45 )
+
+[sub_resource type="Curve" id=19]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.0118343, 0.0954546 ), 0.0, 0.0, 0, 0, Vector2( 0.414201, 0.95 ), 0.0, 0.0, 0, 0, Vector2( 0.982249, 0.495454 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=20]
+curve = SubResource( 19 )
+
+[sub_resource type="ParticlesMaterial" id=21]
+emission_shape = 2
+emission_box_extents = Vector3( 4500, 680, 1 )
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 1, 1, 1 )
+initial_velocity = 5.0
+initial_velocity_random = 1.0
+angular_velocity = 50.0
+angular_velocity_random = 0.5
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.2
+scale_random = 0.2
+scale_curve = SubResource( 20 )
+
+[sub_resource type="Curve" id=22]
+min_value = -500.0
+max_value = 500.0
+_data = [ Vector2( 0, 11.3636 ), 0.0, 0.0, 0, 0, Vector2( 1, -15.9091 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=23]
+curve = SubResource( 22 )
+
+[sub_resource type="ParticlesMaterial" id=24]
+emission_shape = 2
+emission_box_extents = Vector3( 1000, 1, 1 )
+flag_disable_z = true
+spread = 0.0
+gravity = Vector3( 0, 300, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+tangential_accel_curve = SubResource( 23 )
+scale = 4.0
+color = Color( 0.203922, 0.0156863, 0.356863, 1 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 50
+font_data = ExtResource( 45 )
+
+[sub_resource type="DynamicFont" id=26]
+use_filter = true
+font_data = ExtResource( 45 )
+
+[sub_resource type="DynamicFont" id=27]
+size = 30
+use_filter = true
+font_data = ExtResource( 58 )
+
+[sub_resource type="ParticlesMaterial" id=28]
+emission_shape = 2
+emission_box_extents = Vector3( 20, 1, 0 )
+flag_disable_z = true
+gravity = Vector3( 2, 10, 1 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.01
+
+[sub_resource type="Animation" id=29]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("VongTronAs:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.3, 0.3 ), Vector2( 0.15, 0.15 ), Vector2( 0.3, 0.3 ) ]
+}
+
+[sub_resource type="CapsuleShape2D" id=30]
+radius = 45.9736
+height = 103.766
+
+[node name="MyGame" type="Node2D"]
+script = ExtResource( 50 )
+
+[node name="Background" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2( 0.1, 0.1 )
+
+[node name="Layer1" type="ParallaxLayer" parent="Background"]
+position = Vector2( 600.294, 339.789 )
+scale = Vector2( 0.6, 0.6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Background/Layer1"]
+position = Vector2( 50, 0 )
+scale = Vector2( 1.1, 1.1 )
+texture = ExtResource( 113 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="Background/Layer1"]
+position = Vector2( 2161.76, 0 )
+scale = Vector2( 1.1, 1.1 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CongKhongGian" type="Node2D" parent="."]
+
+[node name="CongKhongGian" type="Area2D" parent="CongKhongGian"]
+position = Vector2( 7264.95, 209.682 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CongKhongGian/CongKhongGian"]
+shape = SubResource( 1 )
+
+[node name="MagicCircleRed" type="Sprite" parent="CongKhongGian"]
+visible = false
+position = Vector2( 7266.08, 214.653 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 49 )
+
+[node name="Red" type="AnimationPlayer" parent="CongKhongGian"]
+autoplay = "circlemagic"
+anims/circlemagic = SubResource( 2 )
+
+[node name="CongVao" type="Sprite" parent="CongKhongGian"]
+position = Vector2( 7264.77, 207.388 )
+texture = ExtResource( 102 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CongRa" type="Sprite" parent="CongKhongGian"]
+position = Vector2( 9949.45, 365.846 )
+texture = ExtResource( 102 )
+
+[node name="San" type="Node2D" parent="."]
+
+[node name="Dat" type="TileMap" parent="San"]
+scale = Vector2( 0.5, 0.5 )
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( -65536, 4, 0, -65534, 4, 0, -65532, 4, 0, -65530, 4, 0, -65528, 4, 0, -65526, 4, 0, -65524, 5, 0, -65453, 3, 0, -65451, 4, 0, -65449, 4, 0, -65447, 4, 0, -65445, 4, 0, -65443, 4, 0, -65441, 4, 0, -65439, 4, 0, -65437, 5, 0, 65536, 7, 0, 65538, 7, 0, 65540, 7, 0, 65542, 7, 0, 65544, 7, 0, 65546, 7, 0, 65548, 8, 0, 65619, 6, 0, 65621, 7, 0, 65623, 7, 0, 65625, 7, 0, 65627, 7, 0, 65629, 7, 0, 65631, 7, 0, 65633, 7, 0, 65635, 8, 0, 131179, 0, 0, 131181, 1, 0, 131183, 1, 0, 131185, 1, 0, 131187, 1, 0, 131189, 1, 0, 131191, 1, 0, 131193, 2, 0, 262174, 0, 0, 262176, 1, 0, 262178, 1, 0, 262180, 1, 0, 262182, 1, 0, 262184, 2, 0, 262251, 3, 0, 262253, 4, 0, 262255, 4, 0, 262257, 4, 0, 262259, 4, 0, 262261, 4, 0, 262263, 4, 0, 262265, 10, 0, 262267, 11, 0, 262269, 1, 0, 262271, 1, 0, 262273, 1, 0, 262275, 1, 0, 262277, 1, 0, 262279, 1, 0, 262281, 1, 0, 262283, 1, 0, 262285, 1, 0, 262287, 1, 0, 262289, 1, 0, 262291, 2, 0, 327831, 13, 0, 327833, 14, 0, 327835, 15, 0, 458751, 13, 0, 393217, 14, 0, 393219, 14, 0, 393221, 14, 0, 393223, 15, 0, 393246, 3, 0, 393248, 4, 0, 393250, 4, 0, 393252, 4, 0, 393254, 4, 0, 393256, 10, 0, 393258, 11, 0, 393260, 1, 0, 393262, 1, 0, 393264, 1, 0, 393266, 1, 0, 393268, 1, 0, 393270, 1, 0, 393272, 1, 0, 393274, 2, 0, 393299, 13, 0, 393301, 14, 0, 393303, 14, 0, 393305, 14, 0, 393307, 14, 0, 393309, 14, 0, 393311, 14, 0, 393313, 14, 0, 393315, 14, 0, 393317, 15, 0, 393323, 6, 0, 393325, 7, 0, 393327, 7, 0, 393329, 7, 0, 393331, 7, 0, 393333, 7, 0, 393335, 7, 0, 393337, 7, 0, 393339, 7, 0, 393341, 7, 0, 393343, 7, 0, 393345, 7, 0, 393347, 7, 0, 393349, 7, 0, 393351, 7, 0, 393353, 7, 0, 393355, 7, 0, 393357, 7, 0, 393359, 7, 0, 393361, 7, 0, 393363, 8, 0, 458910, 13, 0, 458912, 14, 0, 458914, 15, 0, 524300, 13, 0, 524302, 14, 0, 524304, 14, 0, 524306, 14, 0, 524308, 14, 0, 524310, 15, 0, 524318, 6, 0, 524320, 7, 0, 524322, 7, 0, 524324, 7, 0, 524326, 7, 0, 524328, 7, 0, 524330, 7, 0, 524332, 7, 0, 524334, 7, 0, 524336, 7, 0, 524338, 7, 0, 524340, 7, 0, 524342, 7, 0, 524344, 7, 0, 524346, 8, 0, 524512, 13, 0, 524514, 14, 0, 524516, 15, 0, 655527, 0, 0, 655529, 1, 0, 655531, 1, 0, 655533, 1, 0, 655535, 1, 0, 655537, 1, 0, 655539, 1, 0, 655541, 1, 0, 655543, 1, 0, 655545, 1, 0, 655547, 1, 0, 655549, 1, 0, 655551, 1, 0, 655553, 1, 0, 655555, 2, 0, 851967, 0, 0, 786433, 1, 0, 786435, 1, 0, 786437, 1, 0, 786439, 2, 0, 786452, 0, 0, 786454, 1, 0, 786456, 1, 0, 786458, 2, 0, 786533, 0, 0, 786535, 1, 0, 786537, 1, 0, 786539, 1, 0, 786541, 1, 0, 786543, 1, 0, 786545, 1, 0, 786547, 1, 0, 786549, 1, 0, 786551, 1, 0, 786553, 1, 0, 786555, 1, 0, 786557, 1, 0, 786559, 1, 0, 786561, 2, 0, 786595, 0, 0, 786597, 9, 0, 786599, 12, 0, 786601, 4, 0, 786603, 4, 0, 786605, 4, 0, 786607, 4, 0, 786609, 4, 0, 786611, 4, 0, 786613, 4, 0, 786615, 4, 0, 786617, 4, 0, 786619, 4, 0, 786621, 4, 0, 786623, 4, 0, 786625, 4, 0, 786627, 5, 0, 852277, 0, 0, 852279, 1, 0, 852281, 1, 0, 852283, 1, 0, 852285, 1, 0, 852287, 1, 0, 852289, 1, 0, 852291, 1, 0, 852293, 1, 0, 852295, 1, 0, 852297, 1, 0, 852299, 1, 0, 852301, 1, 0, 852303, 1, 0, 852305, 1, 0, 852307, 1, 0, 852309, 1, 0, 852311, 1, 0, 852313, 1, 0, 852315, 1, 0, 852317, 1, 0, 852319, 2, 0, 983039, 3, 0, 917505, 4, 0, 917507, 4, 0, 917509, 4, 0, 917511, 5, 0, 917524, 3, 0, 917526, 4, 0, 917528, 4, 0, 917530, 10, 0, 917532, 11, 0, 917534, 1, 0, 917536, 2, 0, 917540, 13, 0, 917542, 14, 0, 917544, 15, 0, 917595, 0, 0, 917597, 1, 0, 917599, 1, 0, 917601, 1, 0, 917603, 9, 0, 917605, 12, 0, 917607, 4, 0, 917609, 4, 0, 917611, 4, 0, 917613, 4, 0, 917615, 4, 0, 917617, 4, 0, 917619, 4, 0, 917621, 4, 0, 917623, 4, 0, 917625, 4, 0, 917627, 4, 0, 917629, 4, 0, 917631, 4, 0, 917633, 5, 0, 917657, 0, 0, 917659, 1, 0, 917661, 1, 0, 917663, 1, 0, 917665, 9, 0, 917667, 12, 0, 917669, 4, 0, 917671, 4, 0, 917673, 4, 0, 917675, 4, 0, 917677, 4, 0, 917679, 4, 0, 917681, 4, 0, 917683, 4, 0, 917685, 4, 0, 917687, 4, 0, 917689, 4, 0, 917691, 4, 0, 917693, 4, 0, 917695, 4, 0, 917697, 4, 0, 917699, 5, 0, 983349, 3, 0, 983351, 4, 0, 983353, 4, 0, 983355, 4, 0, 983357, 4, 0, 983359, 4, 0, 983361, 4, 0, 983363, 4, 0, 983365, 4, 0, 983367, 4, 0, 983369, 4, 0, 983371, 4, 0, 983373, 4, 0, 983375, 4, 0, 983377, 4, 0, 983379, 4, 0, 983381, 4, 0, 983383, 4, 0, 983385, 4, 0, 983387, 4, 0, 983389, 4, 0, 983391, 5, 0, 1114111, 3, 0, 1048577, 4, 0, 1048579, 4, 0, 1048581, 4, 0, 1048583, 5, 0, 1048588, 0, 0, 1048590, 1, 0, 1048592, 1, 0, 1048594, 9, 0, 1048596, 12, 0, 1048598, 4, 0, 1048600, 4, 0, 1048602, 4, 0, 1048604, 4, 0, 1048606, 4, 0, 1048608, 5, 0, 1048618, 13, 0, 1048620, 14, 0, 1048622, 15, 0, 1048658, 13, 0, 1048660, 14, 0, 1048662, 14, 0, 1048664, 15, 0, 1048667, 3, 0, 1048669, 4, 0, 1048671, 4, 0, 1048673, 4, 0, 1048675, 4, 0, 1048677, 4, 0, 1048679, 4, 0, 1048681, 4, 0, 1048683, 4, 0, 1048685, 4, 0, 1048687, 4, 0, 1048689, 4, 0, 1048691, 4, 0, 1048693, 4, 0, 1048695, 4, 0, 1048697, 4, 0, 1048699, 4, 0, 1048701, 4, 0, 1048703, 4, 0, 1048705, 10, 0, 1048707, 11, 0, 1048709, 1, 0, 1048711, 1, 0, 1048713, 1, 0, 1048715, 1, 0, 1048717, 1, 0, 1048719, 1, 0, 1048721, 1, 0, 1048723, 1, 0, 1048725, 1, 0, 1048727, 9, 0, 1048729, 12, 0, 1048731, 4, 0, 1048733, 4, 0, 1048735, 4, 0, 1048737, 4, 0, 1048739, 4, 0, 1048741, 4, 0, 1048743, 4, 0, 1048745, 4, 0, 1048747, 4, 0, 1048749, 4, 0, 1048751, 4, 0, 1048753, 4, 0, 1048755, 4, 0, 1048757, 4, 0, 1048759, 4, 0, 1048761, 4, 0, 1048763, 4, 0, 1048765, 4, 0, 1048767, 4, 0, 1048769, 4, 0, 1048771, 5, 0, 1114421, 6, 0, 1114423, 7, 0, 1114425, 7, 0, 1114427, 7, 0, 1114429, 7, 0, 1114431, 7, 0, 1114433, 7, 0, 1114435, 7, 0, 1114437, 7, 0, 1114439, 7, 0, 1114441, 7, 0, 1114443, 7, 0, 1114445, 7, 0, 1114447, 7, 0, 1114449, 7, 0, 1114451, 7, 0, 1114453, 7, 0, 1114455, 7, 0, 1114457, 7, 0, 1114459, 7, 0, 1114461, 7, 0, 1114463, 8, 0, 1245183, 6, 0, 1179649, 7, 0, 1179651, 7, 0, 1179653, 7, 0, 1179655, 8, 0, 1179660, 6, 0, 1179662, 7, 0, 1179664, 7, 0, 1179666, 7, 0, 1179668, 7, 0, 1179670, 7, 0, 1179672, 7, 0, 1179674, 7, 0, 1179676, 7, 0, 1179678, 7, 0, 1179680, 8, 0, 1179739, 6, 0, 1179741, 7, 0, 1179743, 7, 0, 1179745, 7, 0, 1179747, 7, 0, 1179749, 7, 0, 1179751, 7, 0, 1179753, 7, 0, 1179755, 7, 0, 1179757, 7, 0, 1179759, 7, 0, 1179761, 7, 0, 1179763, 7, 0, 1179765, 7, 0, 1179767, 7, 0, 1179769, 7, 0, 1179771, 7, 0, 1179773, 7, 0, 1179775, 7, 0, 1179777, 7, 0, 1179779, 7, 0, 1179781, 7, 0, 1179783, 7, 0, 1179785, 7, 0, 1179787, 7, 0, 1179789, 7, 0, 1179791, 7, 0, 1179793, 7, 0, 1179795, 7, 0, 1179797, 7, 0, 1179799, 7, 0, 1179801, 7, 0, 1179803, 7, 0, 1179805, 7, 0, 1179807, 7, 0, 1179809, 7, 0, 1179811, 7, 0, 1179813, 7, 0, 1179815, 7, 0, 1179817, 7, 0, 1179819, 7, 0, 1179821, 7, 0, 1179823, 7, 0, 1179825, 7, 0, 1179827, 7, 0, 1179829, 7, 0, 1179831, 7, 0, 1179833, 7, 0, 1179835, 7, 0, 1179837, 7, 0, 1179839, 7, 0, 1179841, 7, 0, 1179843, 8, 0 )
+
+[node name="ThungGoVaXuong" type="TileMap" parent="San"]
+scale = Vector2( 0.61, 0.61 )
+tile_set = ExtResource( 196 )
+cell_size = Vector2( 105, 105 )
+format = 1
+tile_data = PoolIntArray( 5, 10, 0, 42, 4, 0, 48, 10, 0, 65555, 0, 0, 65596, 12, 0, 131087, 12, 0, 131126, 1, 0, 131138, 10, 0, 131145, 4, 0, 196627, 1, 0, 196677, 4, 0, 196705, 0, 0, 262160, 10, 0, 262168, 1, 0, 262240, 0, 0, 262241, 0, 0, 393226, 12, 0, 393270, 1, 0, 393282, 0, 0, 393301, 4, 0, 393308, 12, 0, 458754, 1, 0, 458761, 0, 0, 458818, 0, 0, 458819, 0, 0, 458842, 4, 0, 524303, 1, 0, 524335, 4, 0, 524359, 4, 0, 524365, 1, 0, 524382, 10, 0, 589824, 12, 0, 589835, 4, 0, 589882, 12, 0, 589889, 10, 0, 589911, 1, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="San"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="San/StaticBody2D"]
+position = Vector2( -23.1569, 351.014 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TrangTri" type="Node2D" parent="."]
+
+[node name="BuiCay" type="Node2D" parent="TrangTri"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 45.0185, 363.175 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 119 )
+
+[node name="2" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 1018.55, 423.913 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 119 )
+
+[node name="3" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 754.111, 370.345 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 120 )
+
+[node name="4" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 1018.1, 108.06 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 119 )
+
+[node name="5" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 3345.22, 366.863 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 119 )
+
+[node name="6" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 2689.48, 490.016 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 119 )
+
+[node name="7" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 3511.71, 33.4734 )
+texture = ExtResource( 120 )
+
+[node name="8" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 3406.77, 354.499 )
+texture = ExtResource( 120 )
+
+[node name="10" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 2983.23, 164.68 )
+texture = ExtResource( 120 )
+
+[node name="11" type="Sprite" parent="TrangTri/BuiCay"]
+position = Vector2( 3163.9, 413.96 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 120 )
+
+[node name="BiaMo" type="Node2D" parent="TrangTri"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1" type="Sprite" parent="TrangTri/BiaMo"]
+position = Vector2( 44.7319, 371.056 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 115 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="2" type="Sprite" parent="TrangTri/BiaMo"]
+position = Vector2( 3615.4, 51.4364 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 115 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CayThanhGia" type="Node2D" parent="TrangTri"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1" type="Sprite" parent="TrangTri/CayThanhGia"]
+position = Vector2( 143.108, 366.143 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 117 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="2" type="Sprite" parent="TrangTri/CayThanhGia"]
+position = Vector2( 1108.65, 114.391 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 117 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="3" type="Sprite" parent="TrangTri/CayThanhGia"]
+position = Vector2( 3196.9, 177.961 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 117 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Xuong" type="Node2D" parent="TrangTri"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1" type="Sprite" parent="TrangTri/Xuong"]
+position = Vector2( 446.18, 496.206 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 118 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BangChiDuong-CayKho" type="Node2D" parent="TrangTri"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="1" type="Sprite" parent="TrangTri/BangChiDuong-CayKho"]
+position = Vector2( 249.157, 156.304 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 112 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="2" type="Sprite" parent="TrangTri/BangChiDuong-CayKho"]
+position = Vector2( 175.648, 156.304 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 112 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="3" type="Sprite" parent="TrangTri/BangChiDuong-CayKho"]
+position = Vector2( 58.4424, 160.549 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 114 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="4" type="Sprite" parent="TrangTri/BangChiDuong-CayKho"]
+position = Vector2( 564.606, 185.224 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 116 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="5" type="Sprite" parent="TrangTri/BangChiDuong-CayKho"]
+position = Vector2( 658.035, 239.249 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 121 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="6" type="Sprite" parent="TrangTri/BangChiDuong-CayKho"]
+position = Vector2( 686.057, 364.195 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 105 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="7" type="Sprite" parent="TrangTri/BangChiDuong-CayKho"]
+position = Vector2( 2670.58, 491.78 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 105 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" type="KinematicBody2D" parent="." groups=[
+"Player",
+]]
+position = Vector2( 100, 300 )
+script = ExtResource( 217 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
+position = Vector2( -7.25958, -5.24268 )
+scale = Vector2( 0.1, 0.1 )
+frames = SubResource( 4 )
+animation = "Chay"
+frame = 10
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2( 0.0236282, 1.48895 )
+current = true
+zoom = Vector2( 0.9, 0.9 )
+limit_left = 0
+limit_top = 0
+limit_right = 13000
+limit_bottom = 680
+limit_smoothed = true
+smoothing_enabled = true
+smoothing_speed = 20.0
+
+[node name="Ninja" type="CollisionShape2D" parent="Player"]
+position = Vector2( -5.88967, -3.5461 )
+shape = SubResource( 5 )
+
+[node name="TanCong" type="AnimatedSprite" parent="Player"]
+position = Vector2( -9.37756, 4.1499 )
+scale = Vector2( 0.1, 0.1 )
+frames = SubResource( 6 )
+animation = "TanCong"
+frame = 7
+flip_h = true
+
+[node name="Kiem" type="Area2D" parent="Player" groups=[
+"kiem",
+]]
+
+[node name="KiemBenPhai" type="CollisionShape2D" parent="Player/Kiem"]
+position = Vector2( 37.8569, -2.74319 )
+shape = SubResource( 7 )
+disabled = true
+
+[node name="KiemBenTrai" type="CollisionShape2D" parent="Player/Kiem"]
+position = Vector2( -52.6705, -2.19467 )
+shape = SubResource( 8 )
+disabled = true
+
+[node name="ViTriBan" type="Position2D" parent="Player"]
+position = Vector2( 40, 1 )
+
+[node name="Nhay" type="AudioStreamPlayer2D" parent="Player"]
+position = Vector2( -116.909, -276.66 )
+stream = ExtResource( 110 )
+volume_db = 6.0
+pitch_scale = 0.8
+max_distance = 11500.0
+
+[node name="NhatLa" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource( 24 )
+volume_db = 5.0
+pitch_scale = 0.7
+max_distance = 11500.0
+attenuation = 1.10957
+
+[node name="ThoiGianHoiMana" type="Timer" parent="Player"]
+wait_time = 5.0
+autostart = true
+
+[node name="ThoiGianHoiMau" type="Timer" parent="Player"]
+wait_time = 15.0
+autostart = true
+
+[node name="TGHoiNhanh" type="Timer" parent="Player"]
+wait_time = 0.5
+
+[node name="Hurt" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource( 133 )
+volume_db = 5.0
+max_distance = 11500.0
+attenuation = 0.812252
+
+[node name="thanhDiChuyen" type="Node2D" parent="."]
+
+[node name="1" type="Node2D" parent="thanhDiChuyen"]
+position = Vector2( -25.9476, -56.5341 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="thanhDiChuyen/1"]
+position = Vector2( 2394.36, 634.47 )
+rotation = -0.000202177
+motion/sync_to_physics = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="thanhDiChuyen/1/KinematicBody2D"]
+position = Vector2( 2.28687, 0.778015 )
+shape = SubResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="thanhDiChuyen/1/KinematicBody2D/CollisionShape2D"]
+position = Vector2( 64.1031, 22.6933 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 198 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="thanhDiChuyen/1/KinematicBody2D/CollisionShape2D"]
+position = Vector2( -63.2759, 22.6691 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 185 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite3" type="Sprite" parent="thanhDiChuyen/1/KinematicBody2D/CollisionShape2D"]
+position = Vector2( 0.631958, 22.6848 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 197 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Path2D" type="Path2D" parent="thanhDiChuyen/1"]
+curve = SubResource( 10 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="thanhDiChuyen/1/Path2D"]
+position = Vector2( 2392.67, 630.838 )
+rotation = -0.000202177
+offset = 698.528
+rotate = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="thanhDiChuyen/1/Path2D/PathFollow2D"]
+position = Vector2( 1.68579, 3.63269 )
+remote_path = NodePath("../../../KinematicBody2D")
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="thanhDiChuyen/1"]
+autoplay = "ChuyenDong"
+playback_process_mode = 0
+playback_speed = 0.7
+anims/ChuyenDong = ExtResource( 199 )
+
+[node name="2" type="Node2D" parent="thanhDiChuyen"]
+position = Vector2( 1803.12, -198.335 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="thanhDiChuyen/2"]
+position = Vector2( 4679.02, 529.792 )
+motion/sync_to_physics = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="thanhDiChuyen/2/KinematicBody2D"]
+position = Vector2( -0.126469, -0.397282 )
+shape = SubResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite3" type="Sprite" parent="thanhDiChuyen/2/KinematicBody2D/CollisionShape2D"]
+position = Vector2( 66.1719, 21.3148 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 198 )
+
+[node name="Sprite" type="Sprite" parent="thanhDiChuyen/2/KinematicBody2D/CollisionShape2D"]
+position = Vector2( -61.4233, 21.1553 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 185 )
+
+[node name="Sprite2" type="Sprite" parent="thanhDiChuyen/2/KinematicBody2D/CollisionShape2D"]
+position = Vector2( 2.41064, 21.4631 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 197 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="thanhDiChuyen/2"]
+autoplay = "ChuyenDong2"
+playback_process_mode = 0
+anims/ChuyenDong2 = ExtResource( 204 )
+
+[node name="Path2D" type="Path2D" parent="thanhDiChuyen/2"]
+curve = SubResource( 12 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="thanhDiChuyen/2/Path2D"]
+position = Vector2( 4646.99, 607.2 )
+rotate = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="thanhDiChuyen/2/Path2D/PathFollow2D"]
+position = Vector2( 32.0327, -77.4077 )
+remote_path = NodePath("../../../KinematicBody2D")
+
+[node name="KeThu" type="Node2D" parent="."]
+position = Vector2( -6.23006, 1.46702 )
+
+[node name="KeThu_NhenMotSung" parent="KeThu" instance=ExtResource( 109 )]
+position = Vector2( 1245.7, 423.028 )
+mau = 4
+
+[node name="KeThu_NhenMotSung2" parent="KeThu" instance=ExtResource( 109 )]
+position = Vector2( 769.175, 361.783 )
+
+[node name="KeThu_BongMa" parent="KeThu" instance=ExtResource( 108 )]
+position = Vector2( 706.789, 130.476 )
+
+[node name="KeThu_ThanDen" parent="KeThu" instance=ExtResource( 111 )]
+position = Vector2( 3099.77, 169.274 )
+mau = 4
+
+[node name="KeThu_Rong" parent="KeThu" instance=ExtResource( 54 )]
+position = Vector2( 1650.27, 167.783 )
+tocDo = 50
+mau = 5
+
+[node name="KeThu_NhenMotSung3" parent="KeThu" instance=ExtResource( 109 )]
+position = Vector2( 141.015, 171.489 )
+
+[node name="KeThu_NhenMotSung4" parent="KeThu" instance=ExtResource( 109 )]
+position = Vector2( 1154.48, 106.888 )
+mau = 4
+
+[node name="KeThu_NhenMotSung5" parent="KeThu" instance=ExtResource( 109 )]
+position = Vector2( 2752.04, 490.323 )
+tocDo = 75
+mau = 4
+
+[node name="KeThu_BongMa2" parent="KeThu" instance=ExtResource( 108 )]
+position = Vector2( 3069.7, 291.948 )
+mau = 4
+
+[node name="KeThu_Rong2" parent="KeThu" instance=ExtResource( 54 )]
+position = Vector2( 3886, 354.309 )
+scale = Vector2( 1.2, 1.2 )
+
+[node name="KeThu_BongMa3" parent="KeThu" instance=ExtResource( 108 )]
+position = Vector2( 4807.01, 360.437 )
+
+[node name="KeThu_NhenMotSung6" parent="KeThu" instance=ExtResource( 109 )]
+position = Vector2( 4519.76, 488.466 )
+tocDo = 75
+mau = 4
+
+[node name="KeThu_NhenMotSung7" parent="KeThu" instance=ExtResource( 109 )]
+position = Vector2( 4307.5, 94.5257 )
+scale = Vector2( 1.5, 1.5 )
+tocDo = 75
+tocDoTanCong = 200
+mau = 5
+
+[node name="KeThu_ThanDen2" parent="KeThu" instance=ExtResource( 111 )]
+position = Vector2( 5723.23, 288.448 )
+tocDo = 100
+mau = 5
+
+[node name="KeThu_NhenMotSung8" parent="KeThu" instance=ExtResource( 109 )]
+position = Vector2( 3768.38, 42.7936 )
+tocDo = 75
+tocDoTanCong = 200
+mau = 5
+
+[node name="Boss" parent="KeThu" instance=ExtResource( 129 )]
+position = Vector2( 11136.2, 331.533 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Mana" type="TextureProgress" parent="CanvasLayer"]
+margin_left = 120.0
+margin_top = 79.795
+margin_right = 833.0
+margin_bottom = 164.795
+rect_scale = Vector2( 0.4, 0.4 )
+value = 30.0
+texture_under = ExtResource( 96 )
+texture_progress = ExtResource( 93 )
+tint_under = Color( 1, 1, 1, 0.588235 )
+script = ExtResource( 95 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite2" type="Sprite" parent="CanvasLayer/Mana"]
+position = Vector2( -136.322, 43.1819 )
+scale = Vector2( 1.7, 1.7 )
+texture = ExtResource( 97 )
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/Mana/Sprite2"]
+position = Vector2( -28.1079, -0.39006 )
+scale = Vector2( 1.4, 1.4 )
+texture = ExtResource( 98 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Mana/Sprite2"]
+margin_left = -1.0
+margin_top = -13.9608
+margin_right = 44.0
+margin_bottom = 16.0392
+custom_fonts/font = SubResource( 13 )
+custom_colors/font_color_shadow = Color( 0.968627, 0.94902, 0.94902, 1 )
+text = "100"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP" type="TextureProgress" parent="CanvasLayer"]
+margin_left = 120.0
+margin_top = 31.517
+margin_right = 833.0
+margin_bottom = 116.517
+rect_scale = Vector2( 0.5, 0.5 )
+value = 100.0
+texture_under = ExtResource( 96 )
+texture_progress = ExtResource( 92 )
+tint_under = Color( 1, 1, 1, 0.588235 )
+script = ExtResource( 94 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/HP"]
+position = Vector2( -118.206, 39.3425 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 97 )
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/HP/Sprite"]
+position = Vector2( -31.6973, -0.576309 )
+texture = ExtResource( 99 )
+
+[node name="Label" type="Label" parent="CanvasLayer/HP/Sprite"]
+margin_left = 3.0
+margin_top = -14.0
+margin_right = 48.0
+margin_bottom = 18.0
+custom_fonts/font = SubResource( 14 )
+custom_colors/font_color_shadow = Color( 0.988235, 0.984314, 0.984314, 1 )
+text = "100"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseGame" type="Control" parent="CanvasLayer"]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 106 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/PauseGame"]
+margin_right = 1200.0
+margin_bottom = 680.0
+color = Color( 1, 1, 1, 0.254902 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiTiep" type="TextureButton" parent="CanvasLayer/PauseGame"]
+margin_left = 420.0
+margin_top = 230.0
+margin_right = 634.0
+margin_bottom = 445.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 132 )
+texture_hover = ExtResource( 134 )
+texture_focused = ExtResource( 134 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ThoatGame" type="TextureButton" parent="CanvasLayer/PauseGame"]
+margin_left = 550.0
+margin_top = 230.0
+margin_right = 764.0
+margin_bottom = 445.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 135 )
+texture_hover = ExtResource( 131 )
+texture_focused = ExtResource( 131 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/PauseGame"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 1202.0
+margin_bottom = 681.0
+color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="CanvasLayer/PauseGame"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/PauseGame/CanvasLayer"]
+anims/fade = SubResource( 15 )
+
+[node name="QuayLaiManHinh" type="TextureButton" parent="CanvasLayer/PauseGame"]
+margin_left = 680.0
+margin_top = 230.0
+margin_right = 894.0
+margin_bottom = 445.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_normal = ExtResource( 130 )
+texture_hover = ExtResource( 62 )
+texture_focused = ExtResource( 62 )
+
+[node name="La" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 1125.46, 67.689 )
+rotation = 1.28777
+scale = Vector2( 0.318018, 0.318018 )
+texture = ExtResource( 21 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/La"]
+autoplay = "LaBay"
+anims/LaBay = SubResource( 16 )
+
+[node name="LaCay" type="TextureProgress" parent="CanvasLayer"]
+margin_left = 1053.0
+margin_top = 30.0
+margin_right = 1093.0
+margin_bottom = 169.0
+rect_scale = Vector2( 0.69, 0.69 )
+max_value = 15.0
+value = 10.0
+texture_under = ExtResource( 25 )
+texture_progress = ExtResource( 33 )
+fill_mode = 3
+script = ExtResource( 43 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LaCayHienTai" type="Label" parent="CanvasLayer/LaCay"]
+margin_left = 46.9396
+margin_top = 114.48
+margin_right = 86.9396
+margin_bottom = 138.48
+custom_fonts/font = SubResource( 17 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TongLaCay" type="Label" parent="CanvasLayer/LaCay"]
+margin_left = 92.9315
+margin_top = 114.124
+margin_right = 163.932
+margin_bottom = 163.124
+custom_fonts/font = SubResource( 18 )
+text = "/ 15
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Khoi" type="Particles2D" parent="."]
+position = Vector2( 3310.29, 0 )
+amount = 500
+lifetime = 20.0
+visibility_rect = Rect2( -3200, 0, 6600, 680 )
+process_material = SubResource( 21 )
+texture = ExtResource( 103 )
+
+[node name="MuaBao" type="Particles2D" parent="."]
+position = Vector2( 10500, 0 )
+amount = 600
+lifetime = 5.0
+visibility_rect = Rect2( -1000, 0, 2000, 680 )
+process_material = SubResource( 24 )
+
+[node name="SamSet" parent="." instance=ExtResource( 104 )]
+position = Vector2( 0.487686, 0.975357 )
+
+[node name="AmThanh" type="Node2D" parent="."]
+
+[node name="NhacNen" type="AudioStreamPlayer2D" parent="AmThanh"]
+stream = ExtResource( 107 )
+volume_db = 1.0
+autoplay = true
+max_distance = 7300.0
+
+[node name="HappyJungle" type="AudioStreamPlayer2D" parent="AmThanh"]
+stream = ExtResource( 101 )
+volume_db = 10.0
+max_distance = 12000.0
+
+[node name="KetThucGame" type="CanvasLayer" parent="."]
+
+[node name="NenDenNhat" type="ColorRect" parent="KetThucGame"]
+visible = false
+margin_top = 1.29242
+margin_right = 1200.0
+margin_bottom = 601.292
+color = Color( 0, 0, 0, 0.627451 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NenDenDam" type="ColorRect" parent="KetThucGame"]
+visible = false
+margin_left = 202.0
+margin_top = 172.0
+margin_right = 992.0
+margin_bottom = 386.0
+color = Color( 0, 0, 0, 0.815686 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YouLose" type="Label" parent="KetThucGame"]
+visible = false
+margin_left = 378.349
+margin_top = 204.973
+margin_right = 809.349
+margin_bottom = 325.973
+custom_fonts/font = SubResource( 25 )
+text = "YOU LOSE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ThongBaoThua" type="Label" parent="KetThucGame"]
+visible = false
+margin_left = 241.216
+margin_top = 293.08
+margin_right = 966.216
+margin_bottom = 325.08
+custom_fonts/font = SubResource( 26 )
+text = "Khu rừng tiếp tục chìm vào trong bóng tối vô tận..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NenTrangNhat" type="ColorRect" parent="KetThucGame"]
+visible = false
+margin_right = 1200.0
+margin_bottom = 600.0
+color = Color( 1, 1, 1, 0.192157 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KhungWin" type="Sprite" parent="KetThucGame"]
+visible = false
+position = Vector2( 591.695, 306.928 )
+scale = Vector2( 0.5, 0.4 )
+texture = ExtResource( 57 )
+
+[node name="ThongBaoThang" type="Label" parent="KetThucGame"]
+visible = false
+margin_left = 373.41
+margin_top = 219.393
+margin_right = 2198.41
+margin_bottom = 388.393
+custom_fonts/font = SubResource( 27 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Bè lũ quái vật đã bị tiêu diệt hết, mầm xanh 
+được trao trả lại cho khu rừng già. Bóng tối 
+dần dần rút lui, cây cối mọc  lên  xanh  tươi, 
+muông thú từ khắp muôn nơi trở lại sinh sống. 
+Bạn, đã viết lên một truyền kì Ninja!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YouWin" type="Sprite" parent="KetThucGame"]
+visible = false
+position = Vector2( 581.722, 130.749 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 60 )
+
+[node name="Thua" type="Timer" parent="KetThucGame"]
+wait_time = 5.0
+one_shot = true
+
+[node name="NutQuayLai" type="TextureButton" parent="KetThucGame"]
+visible = false
+margin_left = 542.792
+margin_top = 457.34
+margin_right = 756.792
+margin_bottom = 672.34
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 71 )
+texture_hover = ExtResource( 62 )
+texture_focused = ExtResource( 62 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gai" type="Node2D" parent="."]
+position = Vector2( 583.206, 384.801 )
+
+[node name="Gai5" parent="Gai" instance=ExtResource( 16 )]
+position = Vector2( 4707.75, -7.10535 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Gai3" parent="Gai" instance=ExtResource( 16 )]
+position = Vector2( 2984.59, -325.633 )
+
+[node name="Gai2" parent="Gai" instance=ExtResource( 16 )]
+position = Vector2( 831.588, -203.431 )
+scale = Vector2( 2, 2 )
+
+[node name="Gai10" parent="Gai" instance=ExtResource( 16 )]
+position = Vector2( 3822.19, 119.49 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Gai11" parent="Gai" instance=ExtResource( 16 )]
+position = Vector2( -538.159, -199.93 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="Gai13" parent="Gai" instance=ExtResource( 16 )]
+position = Vector2( 2605.9, -195.201 )
+
+[node name="Gai16" parent="Gai" instance=ExtResource( 16 )]
+position = Vector2( -48.9657, 120.66 )
+scale = Vector2( 1.3, 1.3 )
+
+[node name="GaiAn" parent="Gai" instance=ExtResource( 127 )]
+position = Vector2( 381.605, 27.8938 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="GaiAn2" parent="Gai" instance=ExtResource( 127 )]
+position = Vector2( 51.7468, -163.865 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="GaiAn3" parent="Gai" instance=ExtResource( 127 )]
+position = Vector2( 988.759, -228.164 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="GaiAn4" parent="Gai" instance=ExtResource( 127 )]
+position = Vector2( 970.698, -227.981 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="HoaSinhMenh" type="Node2D" parent="."]
+position = Vector2( 4096, 248 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="VongTronAs" type="Sprite" parent="HoaSinhMenh"]
+position = Vector2( 2.25, -7.24805 )
+rotation = 0.872665
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 125 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Light" type="Sprite" parent="HoaSinhMenh"]
+position = Vector2( -1.8418, 71.3752 )
+scale = Vector2( 0.2, 0.245 )
+texture = ExtResource( 124 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Particles2D" type="Particles2D" parent="HoaSinhMenh"]
+position = Vector2( 0.555664, -1.42068 )
+amount = 5
+lifetime = 10.0
+process_material = SubResource( 28 )
+texture = ExtResource( 123 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hoa" type="Sprite" parent="HoaSinhMenh"]
+position = Vector2( 3.35547, -7.95801 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 122 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HoaSinhMenh"]
+autoplay = "Hoạt ảnh mới"
+"anims/Hoạt ảnh mới" = SubResource( 29 )
+
+[node name="HoiPhuc" type="Area2D" parent="HoaSinhMenh"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HoaSinhMenh/HoiPhuc"]
+position = Vector2( 2.94043, 61.0126 )
+shape = SubResource( 30 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LuaDiaNguc" type="Node2D" parent="."]
+
+[node name="LuaDiaNguc" parent="LuaDiaNguc" instance=ExtResource( 126 )]
+position = Vector2( 3255.79, 363.158 )
+
+[node name="LuaDiaNguc2" parent="LuaDiaNguc" instance=ExtResource( 126 )]
+position = Vector2( 4897.61, 136.787 )
+
+[node name="LuaDiaNguc3" parent="LuaDiaNguc" instance=ExtResource( 126 )]
+position = Vector2( 3544.21, 361.053 )
+
+[node name="LuaDiaNguc4" parent="LuaDiaNguc" instance=ExtResource( 126 )]
+position = Vector2( 3348.42, 363.158 )
+
+[node name="LuaDiaNguc5" parent="LuaDiaNguc" instance=ExtResource( 126 )]
+position = Vector2( 2793.84, 490.963 )
+
+[node name="LuaDiaNguc6" parent="LuaDiaNguc" instance=ExtResource( 126 )]
+position = Vector2( 4778.73, 484.304 )
+scale = Vector2( 1.3, 1.3 )
+
+[node name="LuaDiaNguc7" parent="LuaDiaNguc" instance=ExtResource( 126 )]
+position = Vector2( 3973.22, 87.9849 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="LuaDiaNguc8" parent="LuaDiaNguc" instance=ExtResource( 126 )]
+position = Vector2( 6162.33, 237.423 )
+scale = Vector2( 0.6, 0.8 )
+
+[node name="VongXoayHacAm" parent="." instance=ExtResource( 128 )]
+position = Vector2( 2294.24, 218.689 )
+[connection signal="body_entered" from="CongKhongGian/CongKhongGian" to="Player" method="_on_CongKhongGian_body_entered"]
+[connection signal="lose" from="Player" to="." method="_on_Player_lose"]
+[connection signal="samChop" from="Player" to="SamSet" method="_on_Player_samChop"]
+[connection signal="animation_finished" from="Player/AnimatedSprite" to="Player" method="_on_AnimatedSprite_animation_finished"]
+[connection signal="animation_finished" from="Player/TanCong" to="Player" method="_on_TanCong_animation_finished"]
+[connection signal="body_entered" from="Player/Kiem" to="Player" method="_on_Kiem_body_entered"]
+[connection signal="timeout" from="Player/ThoiGianHoiMana" to="Player" method="_on_ThoiGianHoiMana_timeout"]
+[connection signal="timeout" from="Player/ThoiGianHoiMau" to="Player" method="_on_ThoiGianHoiMau_timeout"]
+[connection signal="timeout" from="Player/TGHoiNhanh" to="Player" method="_on_TGHoiNhanh_timeout"]
+[connection signal="playerWin" from="KeThu/Boss" to="Player" method="_on_Boss_playerWin"]
+[connection signal="playerWin" from="KeThu/Boss" to="." method="_on_Boss_playerWin"]
+[connection signal="playerWin" from="KeThu/Boss" to="SamSet" method="_on_Boss_playerWin"]
+[connection signal="pressed" from="CanvasLayer/PauseGame/ChoiTiep" to="CanvasLayer/PauseGame" method="_on_ChoiTiep_pressed"]
+[connection signal="pressed" from="CanvasLayer/PauseGame/ThoatGame" to="CanvasLayer/PauseGame" method="_on_ThoatGame_pressed"]
+[connection signal="pressed" from="CanvasLayer/PauseGame/QuayLaiManHinh" to="CanvasLayer/PauseGame" method="_on_QuayLaiManHinh_pressed"]
+[connection signal="timeout" from="KetThucGame/Thua" to="." method="_on_Thua_timeout"]
+[connection signal="pressed" from="KetThucGame/NutQuayLai" to="." method="_on_NutQuayLai_pressed"]
+[connection signal="body_entered" from="HoaSinhMenh/HoiPhuc" to="Player" method="_on_HoiPhuc_body_entered"]
+[connection signal="body_exited" from="HoaSinhMenh/HoiPhuc" to="Player" method="_on_HoiPhuc_body_exited"]

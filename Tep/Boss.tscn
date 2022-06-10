@@ -1,0 +1,367 @@
+[gd_scene load_steps=55 format=2]
+
+[ext_resource path="res://DoHoa/Enemy/Moi/BossRong.png" type="Texture" id=1]
+[ext_resource path="res://Tep/Boss/Boss.gd" type="Script" id=2]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/VIDA_10.png" type="Texture" id=3]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/VIDA_0.png" type="Texture" id=4]
+[ext_resource path="res://DoHoa/Music/bossdead.wav" type="AudioStream" id=5]
+[ext_resource path="res://DoHoa/Music/BossUlti.wav" type="AudioStream" id=6]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 192, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 384, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 576, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 768, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 960, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1152, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1344, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 768, 384, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1152, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 192, 576, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 576, 960, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 768, 0, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 960, 0, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 576, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 768, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 960, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1152, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1344, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1152, 768, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1344, 768, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 768, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1152, 960, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1344, 960, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 960, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 768, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 192, 768, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 768, 768, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 960, 768, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 768, 960, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 960, 960, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 192, 0, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=35]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 384, 0, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 192, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 384, 192, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 384, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=40]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 192, 384, 192, 192 )
+
+[sub_resource type="AtlasTexture" id=41]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 384, 384, 192, 192 )
+
+[sub_resource type="SpriteFrames" id=42]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "TanCongGan",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"loop": true,
+"name": "BiThuong",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 13 ), SubResource( 14 ) ],
+"loop": true,
+"name": "HatDan",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": true,
+"name": "RaLenh",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
+"loop": true,
+"name": "KietSuc",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
+"loop": true,
+"name": "TrieuHoi",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ) ],
+"loop": true,
+"name": "NhanRoi",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=43]
+radius = 17.4682
+height = 54.4622
+
+[sub_resource type="RectangleShape2D" id=44]
+extents = Vector2( 21.2402, 27.438 )
+
+[sub_resource type="RectangleShape2D" id=45]
+extents = Vector2( 10, 19.4153 )
+
+[sub_resource type="CircleShape2D" id=46]
+radius = 392.15
+
+[sub_resource type="CircleShape2D" id=47]
+radius = 679.119
+
+[sub_resource type="RectangleShape2D" id=48]
+extents = Vector2( 64.1957, 10.3705 )
+
+[node name="Boss" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.880264, -0.440125 )
+frames = SubResource( 42 )
+animation = "TanCongGan"
+frame = 4
+playing = true
+
+[node name="1" type="CollisionShape2D" parent="."]
+position = Vector2( -11.4433, 4.84139 )
+shape = SubResource( 43 )
+
+[node name="2" type="CollisionShape2D" parent="."]
+position = Vector2( 8.66269, 37.5567 )
+rotation = -0.785398
+shape = SubResource( 44 )
+
+[node name="3" type="CollisionShape2D" parent="."]
+position = Vector2( -40.04, 40.7396 )
+rotation = 0.785398
+shape = SubResource( 45 )
+
+[node name="BanThuong" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="Ulti" type="Timer" parent="."]
+wait_time = 10.0
+
+[node name="HoiMau" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
+
+[node name="VungTanCong" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VungTanCong"]
+shape = SubResource( 46 )
+
+[node name="VungDichChuyen" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VungDichChuyen"]
+position = Vector2( -12.0033, 29.1508 )
+shape = SubResource( 47 )
+
+[node name="ViTriBanThuong" type="Position2D" parent="."]
+position = Vector2( 0, 43.9521 )
+
+[node name="DanUlti1" type="Position2D" parent="."]
+position = Vector2( -84.2159, -93.744 )
+
+[node name="DanUlti2" type="Position2D" parent="."]
+position = Vector2( -34.7314, -133.7 )
+
+[node name="DanUlti3" type="Position2D" parent="."]
+position = Vector2( 24.8959, -133.086 )
+
+[node name="DanUlti4" type="Position2D" parent="."]
+position = Vector2( 75.6098, -95.2807 )
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = -59.2435
+margin_top = -76.8905
+margin_right = 318.757
+margin_bottom = -36.8905
+rect_scale = Vector2( 0.3, 0.14 )
+value = 30.0
+texture_under = ExtResource( 4 )
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TanCongGan" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TanCongGan"]
+position = Vector2( -13.8504, 66.687 )
+shape = SubResource( 48 )
+
+[node name="Dead" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = 20.0
+
+[node name="BanUlti" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+volume_db = 5.0
+max_distance = 11500.0
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="timeout" from="BanThuong" to="." method="_on_BanThuong_timeout"]
+[connection signal="timeout" from="Ulti" to="." method="_on_Ulti_timeout"]
+[connection signal="timeout" from="HoiMau" to="." method="_on_HoiMau_timeout"]
+[connection signal="body_entered" from="VungTanCong" to="." method="_on_VungTanCong_body_entered"]
+[connection signal="body_exited" from="VungTanCong" to="." method="_on_VungTanCong_body_exited"]
+[connection signal="body_entered" from="VungDichChuyen" to="." method="_on_VungDichChuyen_body_entered"]
+[connection signal="body_exited" from="VungDichChuyen" to="." method="_on_VungDichChuyen_body_exited"]
+[connection signal="body_entered" from="TanCongGan" to="." method="_on_TanCongGan_body_entered"]

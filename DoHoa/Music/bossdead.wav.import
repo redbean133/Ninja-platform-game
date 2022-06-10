@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bossdead.wav-ad5eef1f04b323fc40f89aa9042afbe4.sample"
+
+[deps]
+
+source_file="res://DoHoa/Music/bossdead.wav"
+dest_files=[ "res://.import/bossdead.wav-ad5eef1f04b323fc40f89aa9042afbe4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

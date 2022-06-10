@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Tep/BongMaBay/Dan/5ed2a2917e6e8.png" type="Texture" id=1]
+[ext_resource path="res://Tep/BongMaBay/DanSamSet.gd" type="Script" id=2]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "phun",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 7.98145, 5.79669 )
+
+[node name="DanSamSet" type="Area2D"]
+scale = Vector2( 0.4, 0.4 )
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.0874925, 1.04603 )
+rotation = 0.523599
+scale = Vector2( -0.159449, 0.161648 )
+frames = SubResource( 1 )
+animation = "phun"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.0113068, 0.512392 )
+rotation = 1.56801
+shape = SubResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( -0.170804, 0.630184 )
+scale = Vector2( 0.585346, 0.586419 )
+[connection signal="body_entered" from="." to="." method="_on_dan_lua_body_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

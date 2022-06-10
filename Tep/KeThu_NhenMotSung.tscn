@@ -1,0 +1,166 @@
+[gd_scene load_steps=80 format=2]
+
+[ext_resource path="res://Tep/NhenMotSung.gd" type="Script" id=1]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_15.png" type="Texture" id=2]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_2.png" type="Texture" id=3]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_1.png" type="Texture" id=4]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_4.png" type="Texture" id=5]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_9.png" type="Texture" id=6]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_20.png" type="Texture" id=7]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_18.png" type="Texture" id=8]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_14.png" type="Texture" id=9]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_10.png" type="Texture" id=10]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_11.png" type="Texture" id=11]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_5.png" type="Texture" id=12]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_16.png" type="Texture" id=13]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_19.png" type="Texture" id=14]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_6.png" type="Texture" id=15]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_0.png" type="Texture" id=16]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_22.png" type="Texture" id=17]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_21.png" type="Texture" id=18]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_24.png" type="Texture" id=19]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_23.png" type="Texture" id=20]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_7.png" type="Texture" id=21]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_13.png" type="Texture" id=22]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_17.png" type="Texture" id=23]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_8.png" type="Texture" id=24]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_12.png" type="Texture" id=25]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_7.png" type="Texture" id=26]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/attack/skeleton-attack_3.png" type="Texture" id=27]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_2.png" type="Texture" id=28]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_4.png" type="Texture" id=29]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_8.png" type="Texture" id=30]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_11.png" type="Texture" id=31]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_12.png" type="Texture" id=32]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_8.png" type="Texture" id=33]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_10.png" type="Texture" id=34]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_6.png" type="Texture" id=35]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_9.png" type="Texture" id=36]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_0.png" type="Texture" id=37]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_1.png" type="Texture" id=38]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_3.png" type="Texture" id=39]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_14.png" type="Texture" id=40]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_20.png" type="Texture" id=41]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_15.png" type="Texture" id=42]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_12.png" type="Texture" id=43]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_24.png" type="Texture" id=44]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/gothit/skeleton-got_hit_0.png" type="Texture" id=45]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_1.png" type="Texture" id=46]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_2.png" type="Texture" id=47]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_7.png" type="Texture" id=48]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/gothit/skeleton-got_hit_2.png" type="Texture" id=49]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_3.png" type="Texture" id=50]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_11.png" type="Texture" id=51]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_4.png" type="Texture" id=52]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_0.png" type="Texture" id=53]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_5.png" type="Texture" id=54]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/gothit/skeleton-got_hit_3.png" type="Texture" id=55]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/gothit/skeleton-got_hit_6.png" type="Texture" id=56]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_9.png" type="Texture" id=57]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/walking/skeleton-walking_5.png" type="Texture" id=58]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/gothit/skeleton-got_hit_7.png" type="Texture" id=59]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_6.png" type="Texture" id=60]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/gothit/skeleton-got_hit_5.png" type="Texture" id=61]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_18.png" type="Texture" id=62]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/gothit/skeleton-got_hit_1.png" type="Texture" id=63]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/gothit/skeleton-got_hit_4.png" type="Texture" id=64]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_10.png" type="Texture" id=65]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_23.png" type="Texture" id=66]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_16.png" type="Texture" id=67]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_19.png" type="Texture" id=68]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_25.png" type="Texture" id=69]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_22.png" type="Texture" id=70]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_21.png" type="Texture" id=71]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_13.png" type="Texture" id=72]
+[ext_resource path="res://DoHoa/Enemy/NhenCoSung/defeated/skeleton-defeated_17.png" type="Texture" id=73]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/VIDA_10.png" type="Texture" id=74]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/VIDA_0.png" type="Texture" id=75]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 16 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 27 ), ExtResource( 5 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 21 ), ExtResource( 24 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 25 ), ExtResource( 9 ), ExtResource( 22 ), ExtResource( 2 ), ExtResource( 13 ), ExtResource( 23 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 7 ), ExtResource( 17 ), ExtResource( 20 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "TanCong",
+"speed": 30.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "BienMat",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 63 ), ExtResource( 49 ), ExtResource( 55 ), ExtResource( 64 ), ExtResource( 61 ), ExtResource( 56 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ), ExtResource( 59 ) ],
+"loop": true,
+"name": "BiThuong",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 38 ), ExtResource( 28 ), ExtResource( 39 ), ExtResource( 29 ), ExtResource( 58 ), ExtResource( 35 ), ExtResource( 26 ), ExtResource( 30 ), ExtResource( 36 ), ExtResource( 34 ), ExtResource( 31 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "Chay",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 63 ), ExtResource( 49 ), ExtResource( 55 ), ExtResource( 64 ), ExtResource( 61 ), ExtResource( 56 ), ExtResource( 59 ), ExtResource( 53 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 52 ), ExtResource( 54 ), ExtResource( 60 ), ExtResource( 48 ), ExtResource( 33 ), ExtResource( 57 ), ExtResource( 65 ), ExtResource( 51 ), ExtResource( 43 ), ExtResource( 72 ), ExtResource( 40 ), ExtResource( 67 ), ExtResource( 42 ), ExtResource( 73 ), ExtResource( 62 ), ExtResource( 68 ), ExtResource( 41 ), ExtResource( 71 ), ExtResource( 70 ), ExtResource( 44 ), ExtResource( 66 ), ExtResource( 69 ) ],
+"loop": true,
+"name": "Chet",
+"speed": 30.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 18.395
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 27.6775
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 81.3159, 10 )
+
+[node name="KeThu_NhenMotSung" type="KinematicBody2D"]
+position = Vector2( 538.175, 484.783 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -0.125488, -2.33398 )
+scale = Vector2( 0.08, 0.08 )
+frames = SubResource( 1 )
+animation = "Chay"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 5.91931, 1.04233 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( -16.5357, -0.80661 )
+enabled = true
+
+[node name="Nhen" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nhen"]
+position = Vector2( 0.383118, -1.06878 )
+shape = SubResource( 3 )
+
+[node name="Rada" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rada"]
+shape = SubResource( 4 )
+
+[node name="HP_Nhen" type="TextureProgress" parent="."]
+visible = false
+margin_left = -21.7571
+margin_top = -27.7036
+margin_right = 356.243
+margin_bottom = 12.2964
+rect_scale = Vector2( 0.12, 0.12 )
+max_value = 3.0
+value = 3.0
+texture_under = ExtResource( 75 )
+texture_progress = ExtResource( 74 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Nhen" to="." method="_on_Nhen_body_entered"]
+[connection signal="body_exited" from="Nhen" to="." method="_on_Nhen_body_exited"]
+[connection signal="body_entered" from="Rada" to="." method="_on_Rada_body_entered"]
+[connection signal="body_exited" from="Rada" to="." method="_on_Rada_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -1,0 +1,107 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Tep/ThanDen/ThanDen.gd" type="Script" id=1]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Death6.png" type="Texture" id=2]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/VIDA_10.png" type="Texture" id=3]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Flight2.png" type="Texture" id=4]
+[ext_resource path="res://DoHoa/MotSoThuKhac/ThanhMau/VIDA_0.png" type="Texture" id=5]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Flight4.png" type="Texture" id=6]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Death5.png" type="Texture" id=7]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Death4.png" type="Texture" id=8]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Flight3.png" type="Texture" id=9]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Flight1.png" type="Texture" id=10]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Death3.png" type="Texture" id=11]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Death1.png" type="Texture" id=12]
+[ext_resource path="res://Tep/ThanDen/ThanDenPNG/Death2.png" type="Texture" id=13]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "chet",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "bay",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 235.744, 7.99448 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 307.829, 14.9961 )
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 15.3498
+height = 29.3875
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 15.7791
+height = 29.8168
+
+[node name="KeThu_ThanDen" type="KinematicBody2D"]
+position = Vector2( 412.264, 153.951 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -14.4669, -14.8209 )
+scale = Vector2( -1.08716, 0.895195 )
+frames = SubResource( 1 )
+animation = "bay"
+frame = 2
+playing = true
+
+[node name="khoang_ban" type="Area2D" parent="AnimatedSprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite/khoang_ban"]
+position = Vector2( -6.34887, 9.34766 )
+shape = SubResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="tam_nhin" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tam_nhin"]
+position = Vector2( 0.0189495, -6.54682 )
+shape = SubResource( 3 )
+
+[node name="Hp_thanDen" type="TextureProgress" parent="."]
+margin_left = -31.3872
+margin_top = -49.83
+margin_right = 346.613
+margin_bottom = -9.82996
+rect_scale = Vector2( 0.1, 0.12 )
+max_value = 3.0
+value = 1.0
+texture_under = ExtResource( 5 )
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -13.5224, -11.5906 )
+shape = SubResource( 4 )
+
+[node name="ThanDen" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ThanDen"]
+position = Vector2( -12.0463, -10.4438 )
+shape = SubResource( 5 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 18.3639, 8.23556 )
+rotation = -3.14159
+scale = Vector2( 1.08716, -0.895195 )
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="AnimatedSprite/khoang_ban" to="." method="_on_khoang_ban_body_entered"]
+[connection signal="body_exited" from="AnimatedSprite/khoang_ban" to="." method="_on_khoang_ban_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="tam_nhin" to="." method="_on_tam_nhin_body_entered"]
+[connection signal="body_exited" from="tam_nhin" to="." method="_on_tam_nhin_body_exited"]
+[connection signal="body_entered" from="ThanDen" to="." method="_on_ThanDen_body_entered"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/NhacNen_mygame.ogg-030c082a587b4a1dd4ff587cd51f7e53.oggstr"
+
+[deps]
+
+source_file="res://DoHoa/Music/NhacNen_mygame.ogg"
+dest_files=[ "res://.import/NhacNen_mygame.ogg-030c082a587b4a1dd4ff587cd51f7e53.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

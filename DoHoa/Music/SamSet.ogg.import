@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SamSet.ogg-6f887841876a23e706306dfc054ece01.oggstr"
+
+[deps]
+
+source_file="res://DoHoa/Music/SamSet.ogg"
+dest_files=[ "res://.import/SamSet.ogg-6f887841876a23e706306dfc054ece01.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

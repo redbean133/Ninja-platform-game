@@ -1,0 +1,203 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://DoHoa/Background/Floor/Tilemap/Background/Background1.jpg" type="Texture" id=1]
+[ext_resource path="res://DoHoa/MotSoThuKhac/NutX.png" type="Texture" id=2]
+[ext_resource path="res://Tep/ManHinhBatDau.gd" type="Script" id=23]
+[ext_resource path="res://DoHoa/Music/NhacNen_menu.ogg" type="AudioStream" id=27]
+[ext_resource path="res://DoHoa/font/UTM Bustamalaka.ttf" type="DynamicFontData" id=28]
+[ext_resource path="res://Tep/fade.tres" type="Animation" id=29]
+
+[sub_resource type="Curve" id=1]
+min_value = -40.0
+max_value = 40.0
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.100592, 14.8182 ), -57.3576, -57.3576, 0, 0, Vector2( 0.159763, 0.272728 ), 47.2727, 47.2727, 0, 0, Vector2( 0.242604, -14.2727 ), -316.052, -316.052, 0, 0, Vector2( 0.420118, -1.90909 ), 34.6667, 34.6667, 0, 0, Vector2( 0.573964, 18.4545 ), 68.2828, 68.2828, 0, 0, Vector2( 0.692308, -9.18182 ), -122.909, -122.909, 0, 0, Vector2( 0.810651, 3.18182 ), -72.9773, -72.9773, 0, 0, Vector2( 0.87574, -15 ), 36.8727, 36.8727, 0, 0, Vector2( 0.982248, 9.72727 ), -49.1636, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=2]
+curve = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 2
+emission_box_extents = Vector3( 600, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 20, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+tangential_accel_curve = SubResource( 2 )
+scale = 2.0
+
+[sub_resource type="DynamicFont" id=4]
+size = 25
+use_filter = true
+font_data = ExtResource( 28 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 25
+use_filter = true
+font_data = ExtResource( 28 )
+
+[node name="ManHinhBatDau" type="CanvasLayer"]
+script = ExtResource( 23 )
+
+[node name="Nen" type="Node2D" parent="."]
+
+[node name="HinhNen" type="Sprite" parent="Nen"]
+scale = Vector2( 0.403, 0.403 )
+texture = ExtResource( 1 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TuyetRoi" type="Particles2D" parent="Nen"]
+position = Vector2( 604.844, -14.5395 )
+amount = 250
+lifetime = 10.0
+randomness = 1.0
+process_material = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NhacNen" type="AudioStreamPlayer2D" parent="Nen"]
+stream = ExtResource( 27 )
+volume_db = 15.0
+pitch_scale = 1.5
+autoplay = true
+max_distance = 11500.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 800.784
+margin_top = 46.108
+margin_right = 1120.78
+margin_bottom = 550.108
+color = Color( 0.333333, 0.152941, 0.101961, 0.396078 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="NutBatDau" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 572.0
+margin_top = 385.0
+margin_right = 767.0
+margin_bottom = 471.0
+rect_scale = Vector2( 0.5, 0.4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="NutTacGia" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 573.631
+margin_top = 515.315
+margin_right = 761.631
+margin_bottom = 601.315
+rect_scale = Vector2( 0.5, 0.4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NutHuongDan" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 571.0
+margin_top = 452.0
+margin_right = 764.0
+margin_bottom = 528.0
+rect_scale = Vector2( 0.5, 0.4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Nut_X" type="TextureButton" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.756863 )
+margin_left = 1116.54
+margin_top = 27.79
+margin_right = 1703.54
+margin_bottom = 614.79
+rect_rotation = 25.0
+rect_scale = Vector2( 0.05, 0.05 )
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="HuongDan" type="Label" parent="."]
+visible = false
+margin_left = 805.0
+margin_top = 52.0
+margin_right = 1123.0
+margin_bottom = 549.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Nhập vai vào nhân vật Ninja giành lại 
+sự  bình yên cho khu rừng từ những sinh 
+vật ma quái. Người chơi cần tiêu diệt 
+hết tất cả quái vật và thu thập đủ mầm 
+xanh để có thể mở ra cổng không gian, 
+tiến vào nơi ở của Ma Vương Hắc Ám
+và tiêu diệt hắn.
+Nhấn các phím điều hướng để di chuyển.
+Nhấn phím cách để vung kiếm.
+Nhấn phím C  để bắn đạn ma pháp.
+Nhấn phím P  để dừng game.
+Máu và mana tiêu hao sẽ tự động hồi 
+phục theo thời gian."
+align = 3
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TacGia" type="Label" parent="."]
+visible = false
+margin_left = 809.7
+margin_top = 52.7
+margin_right = 1125.7
+margin_bottom = 419.7
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "    Trường Đại học  Quốc gia Hà Nội
+               Đại học Công Nghệ
+Game Ninja được hoàn thành bởi các 
+thành viên nhóm 15, bộ môn lập trình 
+nâng cao, thầy Nguyễn Minh Thuận 
+hướng dẫn.
+	       1. Nguyễn Việt Anh
+		      2. Đàm Đức Ánh
+			      3. Đỗ Mạnh Cường
+				   Chúc mọi người chơi game vui vẻ!!!"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="."]
+visible = false
+margin_right = 1200.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 1200.0
+margin_bottom = 680.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../..")
+anims/fade = ExtResource( 29 )
+[connection signal="pressed" from="NutBatDau" to="." method="_on_PlayGame_pressed"]
+[connection signal="pressed" from="NutTacGia" to="." method="_on_NutCaiDat_pressed"]
+[connection signal="pressed" from="NutHuongDan" to="." method="_on_NutHuongDan_pressed"]
+[connection signal="pressed" from="Nut_X" to="." method="_on_Nut_X_pressed"]
